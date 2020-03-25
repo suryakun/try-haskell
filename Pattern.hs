@@ -2,7 +2,7 @@
 data Colour = RGB Int Int Int | CMYK Float Float Float Float deriving Show
 
 getred :: Colour -> Int
-getred (RGB r _ _) = r
+getred \(RGB r _ _) -> r
 
 getgreen :: Colour -> Int
 getgreen (RGB _ g _) = g
